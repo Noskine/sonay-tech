@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,900&display=swap");
+
+:root {
+  font-size: 62.5%;
+
+  --background: #000;
+  --heading: #dde3f0;
+  --pupler: #7000FF;
+
+  --shadow: rgba(0, 0, 0, 0.421) 1.95px 1.95px 2.6px;
+}
+
+*,
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  overflow-x: hidden !important;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+
+  background-color: var(--background);
+  color: var(--heading);
+}
+
+body::after {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+
+  border-radius: 50%;
+
+  content: '';
+  width: 500px;
+  height: 500px;
+
+  background-color: var(--pupler);
+
+  filter: blur(100px);
+  z-index: -10;
+  opacity: 0.2;
+}
+
+body::before {
+  position: absolute;
+  top: 50%;
+  right: -20%;
+
+  border-radius: 50%;
+
+  content: '';
+  width: 500px;
+  height: 500px;
+
+  background-color: var(--pupler);
+
+  filter: blur(180px);
+  z-index: -10;
+  opacity: 0.2;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #181818;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #282828;    
+  border-radius: 20px;      
+}
+
+svg {
+  font-size: 3rem;
+}
+
+a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primaryFocus);
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+

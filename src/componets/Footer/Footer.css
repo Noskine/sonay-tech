@@ -1,0 +1,36 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid var(--heading);
+
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+footer nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer p,
+footer a {
+  font-size: 1.2rem;
+}
+
+footer a {
+  text-decoration: underline 1px solid var(--heading);
+}
+
+footer a:hover {
+  opacity: 0.5;
+  transition: 300ms;
+}
+
+@media screen and (max-width: 720px) {
+    footer {
+        flex-direction: column;
+    }
+}
