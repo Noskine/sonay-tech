@@ -1,0 +1,71 @@
+#readline {
+    width: 100%;
+    height: 83vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #readline .title {
+    height: 30%;
+    overflow: hidden;
+  }
+  
+  .gradient {
+    font-size: 5.8rem;
+    background: linear-gradient(88deg, #9f25ff 0.28%, #2548ff 43.66%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  #readline .title > h1 {
+    font-size: 5.8rem;
+  }
+  
+  #readline .social nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #down {
+    margin-block: 1rem;
+    position: relative;
+    left: 50%;
+  }
+  
+  .button-contat {
+    border-radius: 10px;
+    background: linear-gradient(
+      97deg,
+      rgba(159, 37, 255, 0.24) 0%,
+      rgba(37, 72, 255, 0.24) 100%
+    );
+  
+    font-size: 2.2rem;
+    padding: 1rem 2rem;
+    transition: 300ms;
+  }
+  .button-contat:hover {
+    opacity: 0.8;
+    transition: 300ms;
+  }
+  
+  @media screen and (max-width: 520px) {
+    #container {
+      padding-inline: 5%;
+      overflow: hidden;
+    }
+    #readline .title {
+      width: 70%;
+      padding-left: 20px;
+    }
+    .gradient {
+      font-size: 2.8rem;
+    }
+    #readline .title > h1 {
+      font-size: 2.8rem;
+    }
+  }

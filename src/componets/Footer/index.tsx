@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Footer.css"
-export default function Footer() {
+export function Footer() {
   return (
     <footer>
       <p>&copy; 2023 Enikson Sonay. All rights reserved</p>

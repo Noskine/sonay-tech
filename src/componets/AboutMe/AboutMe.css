@@ -1,0 +1,50 @@
+#container {
+  padding-inline: 10%;
+}
+
+img {
+  width: 55%;
+  border-radius: 2rem;
+}
+
+#p {
+  margin-top: 2rem;
+}
+
+#imdTec {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #05d616;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+  transition: 300ms all;
+}
+
+#imdTec:hover {
+  opacity: 0.4;
+}
+
+main {
+  margin-top: 3rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1020px){
+  img {
+    width: 200%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  img {
+    width: 80%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
