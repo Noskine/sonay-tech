@@ -9,6 +9,8 @@ import Footer from "../../componets/Footer";
 export default function Home() {
   return (
     <>
+      <div className="blur1"></div>
+      <div className="blur2"></div>
       <div id="container">
         <Header />
         <section id="readline">

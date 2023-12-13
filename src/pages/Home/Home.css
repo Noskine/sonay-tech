@@ -1,6 +1,10 @@
 #container {
+  width: 100vw;
+  min-height: 100vh;
   padding-inline: 10%;
+  overflow: hidden;
 }
+
 
 #readline {
   width: 100%;
@@ -60,10 +64,14 @@
 @media screen and (max-width: 520px) {
   #container {
     padding-inline: 5%;
+    overflow: hidden;
   }
   #readline .title {
     width: 70%;
     padding-left: 20px;
+  }
+  .gradient {
+    font-size: 2.8rem;
   }
   #readline .title > h1 {
     font-size: 2.8rem;
