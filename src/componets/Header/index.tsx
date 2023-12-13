@@ -25,7 +25,7 @@ export function Header() {
         />
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/">About me</Link>
+          <Link to="/about-me">About me</Link>
           <Link to="/">Articles</Link>
           <Link to="/" className="btn-contact">
             Contact
@@ -53,7 +53,7 @@ export function Header() {
         </div>
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/">About me</Link>
+          <Link to="/about-me">About me</Link>
           <Link to="/">Articles</Link>
           <Link to="/">Contact</Link>
         </nav>
