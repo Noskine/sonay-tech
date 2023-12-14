@@ -2,7 +2,7 @@ import { HiMenuAlt2, HiMenuAlt3 } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Header.css";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/SonayLogo.svg";
 
 export function Header() {
   const [mobileMenu, setMobileMenu] = useState("");

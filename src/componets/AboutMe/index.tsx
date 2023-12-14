@@ -3,15 +3,18 @@ import "./AboutMe.css";
 export function AboutMe() {
   return (
     <>
-        <main>
+        <main id="container-about">
           <img
             src="https://avatars.githubusercontent.com/u/112139254?v=4"
             alt="profile enikson github"
           />
           <section>
-            <h1>Sobre mim</h1>
+            <h3 className="style-about-h3">Sobre mim</h3>
+            <h1 className="name">Enikson Sonay</h1>
+            <p className="sub-about">Golang & Javascript developer</p>
+            <section className="text-about">
             <p>
-              Olá, muito prazer, eu sou Enikson, programador Full Stack técnico
+              Programador Full Stack técnico
               pelo Instituto Metrópole Digital da UFRN. Desde a infância,
               apaixonei-me por tecnologia, criando páginas em HTML e CSS para
               canais no YouTube. Após um breve afastamento, retornei em 2021,
@@ -28,6 +31,7 @@ export function AboutMe() {
               programação Full Stack. A jornada começou como uma brincadeira,
               agora é minha vida.
             </p>
+            </section>
           </section>
         </main>
     </>

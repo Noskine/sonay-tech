@@ -1,15 +1,14 @@
 header {
-  padding-block: 2rem;
-  border-bottom: 1px solid var(--heading);
-
+  padding-block: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header #logo {
-  width: 40px;
-  border-radius: 10px;
+#logo {
+  width: 120px;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 header nav {
@@ -30,13 +29,13 @@ header nav a:hover {
 }
 
 .btn-contact {
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
+  font-weight: 700;
   border-radius: 10px;
-  background: linear-gradient(
-    97deg,
-    rgba(112, 0, 255, 0.4) 0%,
-    rgba(37, 72, 255, 0.24) 100%
-  );
+  background: linear-gradient(88deg, #03c85fd9 0%, #0a4e35 100%);
+}
+.btn-contact:hover {
+  opacity: 0.8;
 }
 
 .bnt-menu-open,
@@ -89,7 +88,12 @@ header nav a:hover {
 }
 
 @media screen and (max-width: 520px) {
-  header nav {
+  #logo {
+
+    width: 90px;
+    border-radius: 0;
+  }
+  header nav, .btn-contact {
     display: none;
   }
   .bnt-menu-open,

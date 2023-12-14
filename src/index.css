@@ -3,9 +3,10 @@
 :root {
   font-size: 62.5%;
 
-  --background: #000;
+  --background: #090909;
   --heading: #dde3f0;
-  --pupler: #7000FF;
+  --green: #069245;
+  --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   --shadow: rgba(0, 0, 0, 0.421) 1.95px 1.95px 2.6px;
 }
@@ -28,7 +29,7 @@ body {
   max-width: 100vw;
   min-height: 100vh;
 
-  background-image: url("./assets/background.svg");
+  background: var(--background);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--heading);
@@ -43,7 +44,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #282828;    
+  background-color: #069245;    
   border-radius: 20px;      
 }
 
@@ -54,12 +55,12 @@ svg {
 a {
   font-size: 1.4rem;
   font-weight: 500;
-  color: var(--primary);
+  color: var(--heading);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--primaryFocus);
+  opacity: 0.8;
 }
 
 p {

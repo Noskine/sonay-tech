@@ -11,7 +11,7 @@ export function Readline() {
           <h1>
             I'm <span className="gradient">fullstack</span> developer
           </h1>
-          <p>Go and nodejs development</p>
+          <p>Construindo aplicações sustentavies, rápidas e performaticas.</p>
           <br />
           <Link to="/" className="button-contat">
             Contact
