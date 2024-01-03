@@ -55,6 +55,13 @@
 }
 
 @media screen and (max-width: 420px) {
+    #container-readline {
+        height: 70vh;
+    }
+    
+    .text {
+        width: 100%;
+    }
     .title {
         font-size: 3.2rem;
     }
