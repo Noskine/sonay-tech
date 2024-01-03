@@ -27,3 +27,47 @@
     text-transform: capitalize;
     color: var(--c-dark-zinc);
 }
+
+#readline-buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.github {
+    background-color: var(--c-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 860px) {
+    .text {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .title {
+        font-size: 4.8rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .title {
+        font-size: 3.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+    }
+
+    #readline-buttons {
+        flex-direction: column;
+    }
+
+    #readline-buttons button {
+        width: 70%;
+    }
+}

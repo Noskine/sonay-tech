@@ -40,3 +40,25 @@ a {
   color: var(--c-green);
   text-decoration: inherit;
 }
+
+button {
+  min-width: 100px;
+  height: 30px;
+  gap: 1rem;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--c-light-zinc);
+  color: var(--c-black);
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+
+  cursor: pointer;
+  transition: 500ms;
+}
+
+button:hover {
+  opacity: 0.8;
+  transition: 500ms;
+}
+
+
