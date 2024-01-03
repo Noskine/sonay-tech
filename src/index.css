@@ -1,0 +1,40 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 62.5%;
+
+  --c-black: #1a1a1a;
+  --c-light-zinc: #cec1c1;
+  --c-green: #42d392;
+
+  color-scheme: dark;
+  background-color: var(--c-black);
+  color: #cecece;
+}
+
+.gradient-green {
+  background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+a {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--c-green);
+  text-decoration: inherit;
+}
