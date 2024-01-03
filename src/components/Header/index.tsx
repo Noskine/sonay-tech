@@ -1,13 +1,19 @@
 import './header.css'
 import logo from '../../assets/sonaytechlogo.svg'
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaAlignJustify } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export function Header() {
   return (
     <header>
       <section id="container-header">
-        <img src={logo} alt="logotipo sonay tech" id='logo-header' />
+        <section className='header-logotipo'>
+          <img src={logo} alt="logotipo sonay tech" id='logo-header' />
+          <section>
+            <p id='sonay' >Sonay</p>
+            <p id='webD'>Web developer</p>
+          </section>
+        </section>
         <nav>
           <ul>
             <li>
@@ -37,6 +43,9 @@ export function Header() {
             </li>
           </ul>
         </nav>
+        <button id='menu'>
+          <FaAlignJustify />
+        </button>
       </section>
     </header>
   );

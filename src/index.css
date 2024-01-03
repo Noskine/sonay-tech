@@ -5,11 +5,14 @@
 
   --c-black: #1a1a1a;
   --c-light-zinc: #cec1c1;
+  --c-dark-zinc: #9a9a9a;
   --c-green: #42d392;
 
   color-scheme: dark;
   background-color: var(--c-black);
   color: #cecece;
+
+  border: var(--c-dark-zinc);
 }
 
 .gradient-green {
@@ -24,7 +27,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-
 
 h1 {
   font-size: 3.2rem;
