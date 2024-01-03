@@ -15,6 +15,11 @@
   border: var(--c-dark-zinc);
 }
 
+html,
+* {
+  scroll-behavior: smooth;
+}
+
 .gradient-green {
   background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
   background-clip: text;
@@ -60,5 +65,3 @@ button:hover {
   opacity: 0.8;
   transition: 500ms;
 }
-
-

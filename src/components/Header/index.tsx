@@ -1,7 +1,7 @@
-import './header.css'
-import logo from '../../assets/sonaytechlogo.svg'
-import { FaGithub, FaAlignJustify } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import './header.css';
+import logo from '../../assets/sonaytechlogo.svg';
+import { FaGithub, FaAlignJustify } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 export function Header() {
   return (
