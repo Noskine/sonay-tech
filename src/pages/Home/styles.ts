@@ -1,11 +1,24 @@
 import styled from "styled-components";
-
 export const Readline = styled.section`
   padding-inline: 5%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--c-dark-zinc);
+  justify-content: space-between;
+  border-bottom: 1px solid var(--c-light-zinc);
+
+  #element-readline {
+    margin: 0 auto;
+    display: block;
+    width: 40%;
+  }
+
+  @media screen and (max-width: 830px) {
+    #element-readline {
+      display: none;
+    }
+  }
+
 
   @media screen and (max-width: 520px) {
     max-width: 100vw;
@@ -39,20 +52,24 @@ export const Text = styled.section`
     .impact {
       font-size: 1rem;
     }
+  }
 
+  @media screen and (max-width: 830px) {
     width: 100%;
+    align-items: center;
+    h1 {
+      text-align: center;
+    }
   }
 
   @media screen and (max-width: 520px) {
-    align-items: center;
-
     padding-inline: 5%;
     .impact {
       font-size: 1rem;
     }
 
     h1 {
-      font-size: 2.8rem;
+      font-size: 3.2rem;
       text-align: center;
     }
   }
@@ -90,10 +107,11 @@ export const ContainerButtons = styled.section`
     border: 1px solid var(--c-background-buttons);
     transition: 300ms ease-in-out;
   }
+  @media screen and (max-width: 920px) {
+    flex-direction: column;
+  }
 
   @media screen and (max-width: 520px) {
-    flex-direction: column;
-
     .button-github {
       background-color: var(--c-background-buttons);
       color: var(--c-black);

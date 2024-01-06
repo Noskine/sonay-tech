@@ -7,13 +7,13 @@ export const StyleFooter = styled.div`
   justify-content: center;
   gap: 0.5rem;
 
-  footer nav a {
+  nav a {
     gap: 0.5rem;
     font-size: 1.1rem;
     transition: 500ms;
   }
 
-  footer nav a:hover {
+  nav a:hover {
     opacity: 0.6;
     transition: 500ms;
   }

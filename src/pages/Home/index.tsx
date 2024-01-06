@@ -1,4 +1,5 @@
-import {  Readline, Text, ContainerButtons } from './styles'
+import { Readline, Text, ContainerButtons } from './styles'
+import Element from "../../assets/SVG/el1.svg";
 import { FaGithub } from 'react-icons/fa6';
 import { Footer } from '../../components/Footer';
 import { Header } from '../../components/Header'
@@ -22,6 +23,7 @@ export default function Home() {
               </button>
             </ContainerButtons>
           </Text>
+          <img src={ Element } alt="" id="element-readline"/>
         </Readline>
         <Footer />
       </main>
