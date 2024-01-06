@@ -3,10 +3,11 @@
   font-weight: 400;
   font-size: 62.5%;
 
-  --c-black: #1a1a1a;
+  --c-black: #181818;
   --c-light-zinc: #cec1c1;
   --c-dark-zinc: #9a9a9a;
   --c-green: #42d392;
+  --c-background-buttons: #2ea770;
 
   color-scheme: dark;
   background-color: var(--c-black);
@@ -31,6 +32,20 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  overflow-y: hidden;
+}
+
+body::after {
+  content: '';
+  background-color: #42d392;
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  filter: blur(100px);
+  opacity: 0.4;
 }
 
 h1 {
@@ -47,21 +62,23 @@ a {
 }
 
 button {
-  min-width: 100px;
-  height: 30px;
-  gap: 1rem;
-  padding: 0.5rem 1.5rem;
-  background-color: var(--c-light-zinc);
-  color: var(--c-black);
+  background-color: var(--c-background-buttons);
   border: none;
-  border-radius: 1rem;
-  font-size: 1.4rem;
-
+  padding: 0.8rem 1.4rem;
+  border-radius: 1.5rem;
+  color: var(--c-black);
   cursor: pointer;
-  transition: 500ms;
+  transition: 300ms;
 }
 
-button:hover {
+.button-hover:hover {
   opacity: 0.8;
-  transition: 500ms;
+  transition: 300ms;
+}
+
+@media screen and (max-width: 920px) {
+  body::after {
+    width: 100px;
+    height: 100px;
+  }
 }

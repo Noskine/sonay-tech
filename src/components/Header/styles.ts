@@ -1,20 +1,21 @@
 import styled from "styled-components";
 
 export const StyleHeader = styled.header`
-  width: 100vw;
+  max-width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   border-bottom: 1px solid var(--c-dark-zinc);
+  background-color: #181818;
+  z-index: 10;
 
   #container-header {
     height: 5vh;
-
     padding-inline: 5rem;
     padding-block: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     background-color: var(--c-black);
   }
 
@@ -27,7 +28,6 @@ export const StyleHeader = styled.header`
     display: flex;
     align-items: center;
     gap: 1rem;
-
     list-style: none;
   }
 
@@ -75,12 +75,18 @@ export const StyleHeader = styled.header`
   #menu {
     display: none;
     background-color: transparent;
+    color: var(--c-dark-zinc);
     border: none;
     font-size: 1.6rem;
+    padding: 0;
+  }
+
+  #menu svg {
+    font-size: 2rem;
   }
 
   @media screen and (max-width: 560px) {
-    header nav {
+    nav {
       display: none;
     }
 
@@ -106,6 +112,7 @@ export const StyleHeader = styled.header`
 
     #menu {
       display: block;
+
     }
   }
 `;

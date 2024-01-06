@@ -19,16 +19,12 @@ export const StyleFooter = styled.div`
   }
 
   @media screen and (max-width: 620px) {
-    footer {
       flex-direction: column;
-    }
   }
 
   @media screen and (max-width: 620px) {
-    footer {
-      margin: 0;
-    }
-    footer nav a {
+    margin: 0;
+    nav a {
       font-size: 0.8rem;
     }
   }

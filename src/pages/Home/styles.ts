@@ -1,88 +1,103 @@
 import styled from "styled-components";
 
-export const Container = styled.body`
-  #container-readline {
+export const Readline = styled.section`
+  padding-inline: 5%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--c-dark-zinc);
+
+  @media screen and (max-width: 520px) {
+    max-width: 100vw;
+    padding-inline: 0 !important;
+  }
+`;
+
+export const Text = styled.section`
+  width: 50%;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+
+  .impact {
+    max-width: 240px;
+    background-color: #42d39249;
+    color: #42d392;
+    border-radius: 1.5rem;
+    padding: 0.8rem 1.4rem;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: default;
   }
 
-  .text {
-    width: 60%;
+  h1 {
+    font-size: 4.8rem;
   }
 
-  .title {
-    user-select: none;
-    text-align: center;
-    font-size: 6.4rem;
-    font-weight: 900;
-    margin-bottom: 0.5rem;
+  @media screen and (max-width: 920px) {
+    .impact {
+      font-size: 1rem;
+    }
+
+    width: 100%;
   }
 
-  .subtitle {
-    user-select: none;
-    font-size: 1.8rem;
-    text-align: center;
-    text-transform: capitalize;
-    color: var(--c-dark-zinc);
-  }
-
-  #readline-buttons {
-    display: flex;
+  @media screen and (max-width: 520px) {
     align-items: center;
-    gap: 2rem;
-    justify-content: center;
-  }
 
-  .github {
-    background-color: var(--c-green);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  @media screen and (max-width: 860px) {
-    .text {
-      width: 80%;
-    }
-  }
-
-  @media screen and (max-width: 620px) {
-    .title {
-      font-size: 4.8rem;
-    }
-  }
-
-  @media screen and (max-width: 420px) {
-    #container-readline {
-      height: 70vh;
+    padding-inline: 5%;
+    .impact {
+      font-size: 1rem;
     }
 
-    .text {
-      width: 100%;
-    }
-
-    .title {
-      font-size: 3.2rem;
-    }
-
-    .subtitle {
-      font-size: 1.4rem;
-    }
-
-    #readline-buttons {
-      flex-direction: column;
-    }
-
-    #readline-buttons button {
-      width: 70%;
+    h1 {
+      font-size: 2.8rem;
+      text-align: center;
     }
   }
 `;
 
-export const Readline = styled.section`
-  width: 100%;
-  height: 80vh;
+export const ContainerButtons = styled.section`
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-bottom: 1px solid var(--c-dark-zinc);
+  gap: 1rem;
+
+  .button-readline {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-readline svg {
+    font-size: 1.6rem;
+  }
+
+  .button-github {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    color: var(--c-light-zinc);
+    border: 1px solid var(--c-light-zinc);
+    transition: 300ms ease-in-out;
+  }
+
+  .button-github:hover {
+    color: var(--c-black);
+    background-color: var(--c-background-buttons);
+    border: 1px solid var(--c-background-buttons);
+    transition: 300ms ease-in-out;
+  }
+
+  @media screen and (max-width: 520px) {
+    flex-direction: column;
+
+    .button-github {
+      background-color: var(--c-background-buttons);
+      color: var(--c-black);
+      border: none;
+    }
+  }
 `;
