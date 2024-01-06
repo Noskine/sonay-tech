@@ -48,13 +48,14 @@ body::after {
   opacity: 0.4;
 }
 
-
-
+p {
+  font-size: 1.2;
+}
 
 h1 {
   font-size: 3.2rem;
   font-weight: 700;
-  line-height: 1.1;
+  margin-block: 15px;
 }
 
 a {

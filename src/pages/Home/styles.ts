@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const Readline = styled.section`
   padding-inline: 5%;
   height: 90vh;
@@ -31,6 +32,12 @@ export const Text = styled.section`
   user-select: none;
   display: flex;
   flex-direction: column;
+
+  #descript {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
 
   .impact {
     max-width: 240px;
