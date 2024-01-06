@@ -1,14 +1,14 @@
-import './app.css'
-import { Footer } from './components/Footer';
-import { Header } from './components/Header/index'
+import { Container, Readline } from './styles'
+import { Footer } from '../../components/Footer';
+import { Header } from '../../components/Header'
 import { FaGithub } from "react-icons/fa";
 
-function App() {
+export default function Home() {
   return (
-    <>
+    <Container>
       <Header />
-      <section id="container-home">
-        <section id="container-readline">
+      <main>
+        <Readline>
           <div className="text">
             <h1 className="gradient-green title">
               Desenvolvedor Web Golang e Javascript
@@ -25,11 +25,10 @@ function App() {
               </button>
             </section>
           </div>
-        </section>
+        </Readline>
         <Footer />
-      </section>
-    </>
+      </main>
+    </Container>
   )
 }
 
-export default App

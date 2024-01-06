@@ -1,11 +1,11 @@
-import './header.css';
+import { StyleHeader } from './styles';
 import logo from '../../assets/sonaytechlogo.svg';
 import { FaGithub, FaAlignJustify } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 export function Header() {
   return (
-    <header>
+    <StyleHeader>
       <section id="container-header">
         <section className='header-logotipo'>
           <img src={logo} alt="logotipo sonay tech" id='logo-header' />
@@ -47,6 +47,6 @@ export function Header() {
           <FaAlignJustify />
         </button>
       </section>
-    </header>
+    </StyleHeader>
   );
 }

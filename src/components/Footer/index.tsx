@@ -1,8 +1,8 @@
-import './footer.css';
+import { StyleFooter } from "./styles";
 
 export function Footer() {
   return (
-    <footer>
+    <StyleFooter>
       <p>&copy; 2024 Enikson Sonay. All rights reserved</p>
       <nav>
         <a href="/">Terms & Conditions</a>
@@ -11,6 +11,6 @@ export function Footer() {
         <span> | </span>
         <a href="https://github.com/Noskine/sonay-tech">Source Code</a>
       </nav>
-    </footer>
+    </StyleFooter>
   );
 }
