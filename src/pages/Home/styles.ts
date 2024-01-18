@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 export const Readline = styled.section`
   padding-inline: 5%;
-  height: 90vh;
+  height: 99vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--c-light-zinc);
 
   #element-readline {
     margin: 0 auto;
     display: block;
+    opacity: 0.8;
     width: 40%;
   }
 

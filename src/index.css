@@ -4,10 +4,14 @@
   font-size: 62.5%;
 
   --c-black: #181818;
+  --c-black-600: #242424;
   --c-light-zinc: #cec1c1;
   --c-dark-zinc: #9a9a9a;
+  --c-black-zinc: #4b4b4b;
   --c-green: #42d392;
   --c-background-buttons: #2ea770;
+
+  --shadow:rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
   color-scheme: dark;
   background-color: var(--c-black);
@@ -16,23 +20,20 @@
   border: var(--c-dark-zinc);
 }
 
-html,
-* {
-  scroll-behavior: smooth;
-}
-
 .gradient-green {
   background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+*, html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  overflow-y: hidden;
 }
 
 body::after {
@@ -49,12 +50,12 @@ body::after {
 }
 
 p {
-  font-size: 1.2;
+  font-weight: 300;
 }
 
 h1 {
   font-size: 3.2rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-block: 15px;
 }
 
@@ -78,6 +79,31 @@ button {
 .button-hover:hover {
   opacity: 0.8;
   transition: 300ms;
+}
+
+h2 {
+  position: relative;
+  font-size: 2.8rem;
+  line-height: 1rem;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+h2:hover {
+  opacity: 0.7;
+  transition: 300ms;
+}
+
+h2::before{
+  content: '$';
+  font-size: 2rem;
+  color: var(--c-background-buttons);
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 0.5rem;
 }
 
 @media screen and (max-width: 920px) {

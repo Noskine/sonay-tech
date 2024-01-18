@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-export const StyleFooter = styled.div`
+export const Credits = styled.section`
   padding-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  background-color: #212121;
 
   nav a {
     gap: 0.5rem;
@@ -19,7 +20,7 @@ export const StyleFooter = styled.div`
   }
 
   @media screen and (max-width: 620px) {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   @media screen and (max-width: 620px) {
