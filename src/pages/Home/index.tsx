@@ -1,11 +1,25 @@
-import { Readline, Text, ContainerButtons } from './styles'
+import {ContainerButtons, Readline, Text} from './styles'
 import Element from "../../assets/SVG/el1.svg";
-import { FaGithub } from 'react-icons/fa6';
-import { Footer } from '../../components/Footer';
-import { Header } from '../../components/Header'
-import { AboutMe } from '../../components/AboutMe';
+import {FaGithub} from 'react-icons/fa6';
+import {Footer} from '../../components/Footer';
+import {Header} from '../../components/Header'
+import {AboutMe} from '../../components/AboutMe';
+import {useLayoutEffect} from "react";
+
+import * as gsap from "gsap";
 
 export default function Home() {
+  
+  useLayoutEffect(() => {
+    const g =  gsap;
+    
+    g.gsap.fromTo(".impact", {opacity:0, duration: 1 }, {opacity: 1, duration: 1})
+    
+    g.gsap.fromTo(".element", {x: 100, opacity: 0, duration: 1.5}, {x: 0, opacity: 1, duration: 1})
+    
+    g.gsap.fromTo("header", {y:-50, duration: 1}, {y: 0, duration: 1})
+  }, []);
+  
   return (
     <div>
       <Header />
@@ -13,8 +27,8 @@ export default function Home() {
         <Readline>
           <Text>
             <span className='impact'>Criando soluções web de ponta a ponta</span>
-            <h1>Desenvolvedor web Golang e javascript</h1>
-            <p id='descript'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam nulla quis possimus dolores voluptatibus quo.</p>
+            <h1>Desenvolvedor web Golang & javascript</h1>
+            <p id='descript'>Construindo aplicações web, um código por vez: Explorando & Excedendo!</p>
             <ContainerButtons>
               <button className='button-readline button-hover'>
                 Entre em contato comigo!
@@ -25,7 +39,7 @@ export default function Home() {
               </button>
             </ContainerButtons>
           </Text>
-          <img src={Element} alt="" id="element-readline" />
+          <img src={Element} alt="" id="element-readline" className="element" />
         </Readline>
         <AboutMe />
         <Footer />
