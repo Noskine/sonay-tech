@@ -12,6 +12,7 @@ export function Linktree() {
     useLayoutEffect(() => {
         gsap.fromTo(".profile_image", {opacity:0.5, duration: 1}, {opacity: 1, duration: 1});
         gsap.fromTo(".texts", {x:-50, opacity:0.5 }, {x: 0, opacity: 1});
+        gsap.fromTo("header", {y:-50, duration: 1}, {y: 0, duration: 1})
     }, []);
     
     return (
