@@ -1,11 +1,12 @@
 import {ContainerButtons, Readline, Text} from './styles'
+import {FaGithub} from "react-icons/fa6";
 import Element from "../../assets/SVG/el1.svg";
-import {FaGithub} from 'react-icons/fa6';
 import {Footer} from '../../components/Footer';
 import {Header} from '../../components/Header'
 import {AboutMe} from '../../components/AboutMe';
-import {useLayoutEffect} from "react";
+import {Technologies} from "../../components/Technologies";
 
+import {useLayoutEffect} from "react";
 import * as gsap from "gsap";
 
 export default function Home() {
@@ -42,7 +43,8 @@ export default function Home() {
           <img src={Element} alt="" id="element-readline" className="element" />
         </Readline>
         <AboutMe />
-        <Footer />
+        <Technologies />
+        <Footer/>
       </main>
     </div>
   )
