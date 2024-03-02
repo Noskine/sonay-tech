@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    height: 80vh;
     padding-inline: 5%;
+    
+    margin-bottom: 3rem;
     
     h2 {
         font-size: 4.2rem;
@@ -41,7 +42,7 @@ export const Container = styled.section`
 
         .tecnologies-containers {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
             gap: 10px;
 
           
@@ -68,6 +69,21 @@ export const Container = styled.section`
                     transform: scale(1.08);
                 }
             }
+        }
+    }
+    
+    @media screen and (max-width: 830px) {
+        
+        #sectionTechnologies {
+            grid-template-columns: 1fr;
+        }
+        
+        .description-technologies {
+            display: none;
+        }
+
+        .tecnologies-containers {
+            width: 100%;
         }
     }
 `;
