@@ -1,16 +1,19 @@
-import { StyleHeader } from './styles';
+import {StyleHeader} from './styles';
 import logo from '../../assets/sonaytechlogo.svg';
-import { FaGithub, FaAlignJustify } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+import {FaAlignJustify, FaGithub} from 'react-icons/fa';
+import {FaXTwitter} from 'react-icons/fa6';
+import {Link} from "react-router-dom";
 
 export function Header() {
   return (
     <StyleHeader>
       <section id="container-header">
         <section className='header-logotipo'>
-          <img src={logo} alt="logotipo sonay tech" id='logo-header' />
+          <Link to="/">
+            <img src={logo} alt="logotipo sonay tech" id='logo-header'/>
+          </Link>
           <section>
-            <p id='sonay' >Sonay</p>
+            <p id='sonay'>Sonay</p>
             <p id='webD'>Web developer</p>
           </section>
         </section>
@@ -20,26 +23,26 @@ export function Header() {
               <a href="#about">Sobre mim</a>
             </li>
             <li>
-              <a href="#">Experiência</a>
+              <a href="#technologies">Tecnologias</a>
             </li>
             <li>
               <a href="#">Projetos</a>
             </li>
             <hr />
             <li>
-              <a href="#">
+              <Link to="https://github.com/Noskine" target="_blank">
                 <i>
-                  <FaGithub />
+                  <FaGithub/>
                 </i>
-              </a>
+              </Link>
             </li>
-            <hr />
+            <hr/>
             <li>
-              <a href="#">
+              <Link to="https://twitter.com/hey_sonay_" target="-blank">
                 <i>
-                  <FaXTwitter />
+                  <FaXTwitter/>
                 </i>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

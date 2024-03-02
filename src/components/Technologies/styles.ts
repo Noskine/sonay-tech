@@ -1,13 +1,27 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
+    position: relative;
     padding-inline: 5%;
-    
     margin-bottom: 3rem;
+    
+    &::before {
+        position: absolute;
+        filter: blur(80px);
+        border-radius: 50%;
+        content: '';
+        height: 250px;
+        width: 250px;
+        background-color: #2ea77020;
+        z-index: -1;
+        top: -100px;
+        left: -50px;
+    }
     
     h2 {
         font-size: 4.2rem;
         line-height: 38px;
+        text-shadow: var(--shadow);
         
         &::after {
             content: "  .";
@@ -26,17 +40,20 @@ export const Container = styled.section`
                 font-size: 3.2rem;
                 font-weight: 700;
                 text-transform: capitalize;
+                text-shadow: var(--shadow);
             }
             
             hr {
                 border: var(--c-green) 1px solid;
                 line-height: 28px;
+                text-shadow: var(--shadow);
             }
             
             p {
                 font-weight: 400;
                 text-align: justify;
                 font-size: 1.6rem;
+                text-shadow: var(--shadow);
             }
         }
 

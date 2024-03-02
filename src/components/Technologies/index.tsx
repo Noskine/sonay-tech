@@ -68,7 +68,7 @@ export function Technologies() {
     };
     
     return (
-        <Container>
+        <Container id="technologies">
             <h2>Tecnologias</h2>
             <section id="sectionTechnologies">
                 <div className="description-technologies">

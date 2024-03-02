@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 6rem;
-  padding-inline: 5%;
-  background-color: var(--c-black-600);
-  display: flex;
-  gap: 3rem;
-  box-shadow: var(--shadow);
+    padding: 6rem;
+    padding-inline: 5%;
+    background-color: var(--c-black-600);
+    display: flex;
+    gap: 3rem;
+    box-shadow: var(--shadow);
+    z-index: 10;
 
   img {
     width: 400px;

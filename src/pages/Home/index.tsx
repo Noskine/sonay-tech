@@ -8,6 +8,7 @@ import {Technologies} from "../../components/Technologies";
 
 import {useLayoutEffect} from "react";
 import * as gsap from "gsap";
+import {Link} from "react-router-dom";
 
 export default function Home() {
   
@@ -31,13 +32,17 @@ export default function Home() {
             <h1>Desenvolvedor web Golang & javascript</h1>
             <p id='descript'>Construindo aplicações web, um código por vez: Explorando & Excedendo!</p>
             <ContainerButtons>
-              <button className='button-readline button-hover'>
-                Entre em contato comigo!
-              </button>
-              <button className='button-github button-readline'>
-                <FaGithub />
-                Github
-              </button>
+              <Link to="/ways">
+                <button className='button-readline button-hover'>
+                  Entre em contato comigo!
+                </button>
+              </Link>
+              <Link to="https://github.com/Noskine" target="_blank">
+                <button className='button-github button-readline'>
+                  <FaGithub/>
+                  Github
+                </button>
+              </Link>
             </ContainerButtons>
           </Text>
           <img src={Element} alt="" id="element-readline" className="element" />
