@@ -129,6 +129,19 @@ h3 {
   }
 }
 
+.impact {
+  max-width: 240px;
+  background-color: #42d39249;
+  color: #42d392;
+  border-radius: 1.5rem;
+  padding: 0.8rem 1.4rem;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: default;
+}
+
+
 @keyframes loader {
   0% {
     top: 38px;

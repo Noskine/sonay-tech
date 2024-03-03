@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Readline = styled.section`
 		padding-inline: 5%;
-  	height: 99vh;
+  	height: 98vh;
   	display: flex;
 	  align-items: center;
   	justify-content: space-between;
@@ -40,18 +40,7 @@ export const Text = styled.section`
 		    margin-bottom: 30px;
 	  }
 	
-	  .impact {
-	    max-width: 240px;
-	    background-color: #42d39249;
-	    color: #42d392;
-	    border-radius: 1.5rem;
-	    padding: 0.8rem 1.4rem;
-	
-	    font-size: 1.2rem;
-	    font-weight: 700;
-	    cursor: default;
-	  }
-	
+	  
 	  h1 {
         font-size: 5.8rem;
         text-transform: capitalize;

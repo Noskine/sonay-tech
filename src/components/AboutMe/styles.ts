@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    padding: 6rem;
     padding-inline: 5%;
-    background-color: var(--c-black-600);
     display: flex;
     gap: 3rem;
-    box-shadow: var(--shadow);
     z-index: 10;
+    text-shadow: var(--shadow);
 
   img {
     width: 400px;
@@ -20,6 +18,11 @@ export const Container = styled.div`
     font-weight: 700;
     color: var(--c-background-buttons);
   }
+    
+    .aboutTitle {
+        padding: 1.2rem;
+        font-size: 1.4rem;
+    }
 
   p {
     font-size: 1.3rem;
@@ -61,6 +64,7 @@ export const Container = styled.div`
 `;
 
 export const Social = styled.section`
+    margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: end;

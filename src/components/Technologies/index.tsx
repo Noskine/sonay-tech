@@ -69,7 +69,8 @@ export function Technologies() {
     
     return (
         <Container id="technologies">
-            <h2>Tecnologias</h2>
+            <p className="impact">Tecnologias</p>
+            <h2>Um pouco sobre as tecnologias que eu mais tenho familiaridade</h2>
             <section id="sectionTechnologies">
                 <div className="description-technologies">
                     <h3>{title}</h3>

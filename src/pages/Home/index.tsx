@@ -5,10 +5,10 @@ import {Footer} from '../../components/Footer';
 import {Header} from '../../components/Header'
 import {AboutMe} from '../../components/AboutMe';
 import {Technologies} from "../../components/Technologies";
+import {Link} from "react-router-dom";
 
 import {useLayoutEffect} from "react";
 import * as gsap from "gsap";
-import {Link} from "react-router-dom";
 
 export default function Home() {
   
@@ -20,6 +20,8 @@ export default function Home() {
     g.gsap.fromTo(".element", {x: 100, opacity: 0, duration: 1.5}, {x: 0, opacity: 1, duration: 1})
     
     g.gsap.fromTo("header", {y:-50, duration: 1}, {y: 0, duration: 1})
+    
+    g.gsap.fromTo("#tasks", {opacity:0, duration: 1 }, {opacity: 1, duration: 1})
   }, []);
   
   return (
@@ -47,8 +49,8 @@ export default function Home() {
           </Text>
           <img src={Element} alt="" id="element-readline" className="element" />
         </Readline>
-        <AboutMe />
-        <Technologies />
+        <AboutMe/>
+        <Technologies/>
         <Footer/>
       </main>
     </div>

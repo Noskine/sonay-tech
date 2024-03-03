@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
     position: relative;
     padding-inline: 5%;
-    margin-bottom: 3rem;
+    margin-block: 5rem;
     
     &::before {
         position: absolute;
@@ -19,8 +19,8 @@ export const Container = styled.section`
     }
     
     h2 {
-        font-size: 4.2rem;
-        line-height: 38px;
+        font-size: 3.2rem;
+        line-height: 3.2rem;
         text-shadow: var(--shadow);
         
         &::after {
