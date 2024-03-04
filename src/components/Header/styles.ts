@@ -117,21 +117,22 @@ export const StyleHeader = styled.header`
   }
     
     .active {
-        display: block;
+        left: 0px !important;
     }
 `;
 
 export const Aside = styled.aside`
-    display: none;
     position: absolute;
     z-index: -1;
     background-color: #181818;
     width: 80vw;
     min-height: 100vh;
     top: 0;
-    left: 0;
+    left: -400px;
     padding: 0 !important;
     padding-top: 10vh !important;
+    transition: 500ms all ease-in-out;
+    border-right: 1px solid var(--c-black-zinc);
     
     .buttons-social {
         padding: 0;

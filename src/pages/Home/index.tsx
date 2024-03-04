@@ -47,7 +47,9 @@ export default function Home() {
               </Link>
             </ContainerButtons>
           </Text>
-          <img src={Element} alt="" id="element-readline" className="element" />
+          <figure id="element-readline" className="element">
+            <img src={Element} alt="" />
+          </figure>
         </Readline>
         <AboutMe/>
         <Technologies/>

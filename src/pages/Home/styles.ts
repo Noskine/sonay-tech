@@ -8,11 +8,21 @@ export const Readline = styled.section`
   	justify-content: space-between;
 		
 	  #element-readline {
+        position: relative;
 	    margin: 0 auto;
 	    display: block;
 	    opacity: 0.8;
 	    width: 40%;
 	  }
+    
+    @keyframes rotate {
+        to {
+            transform: rotate(0deg);
+        }
+        from{
+            transform: rotate(360deg);
+        }
+    }
 	
 	  @media screen and (max-width: 830px) {
 	    #element-readline {
