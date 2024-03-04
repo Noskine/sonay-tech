@@ -39,7 +39,6 @@ body {
   background-size: cover;
   overflow-x: hidden;
   background-attachment: fixed;
-  cursor: url("");
 }
 
 body::after {
@@ -49,7 +48,7 @@ body::after {
   height: 150px;
   position: absolute;
   top: 0;
-  right: -80px;
+  right: 0px;
   z-index: 2;
   filter: blur(100px);
   opacity: 0.4;
