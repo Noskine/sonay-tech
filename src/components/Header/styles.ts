@@ -74,6 +74,7 @@ export const StyleHeader = styled.header`
 
   #menu {
     display: none;
+      user-select: none;
     background-color: transparent;
     color: var(--c-dark-zinc);
     border: none;
@@ -112,7 +113,6 @@ export const StyleHeader = styled.header`
 
     #menu {
       display: block;
-
     }
   }
     

@@ -1,7 +1,7 @@
 import {Aside, StyleHeader} from './styles';
 import logo from '../../assets/sonaytechlogo.svg';
-import {FaAlignJustify, FaGithub} from 'react-icons/fa';
-import {FaXTwitter} from 'react-icons/fa6';
+import {FaGithub} from 'react-icons/fa';
+import {FaAlignLeft, FaXTwitter} from 'react-icons/fa6';
 import {Link} from "react-router-dom";
 import {Footer} from "../Footer";
 import {useRef} from "react";
@@ -56,7 +56,7 @@ export function Header() {
             </ul>
           </nav>
           <button id='menu' onClick={handleClick}>
-            <FaAlignJustify />
+            <FaAlignLeft />
           </button>
           <Aside ref={Menu}>
             <menu>
