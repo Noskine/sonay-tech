@@ -128,7 +128,7 @@ export const Aside = styled.aside`
     width: 80vw;
     min-height: 100vh;
     top: 0;
-    left: -80vw;
+    left: calc(-80vw - 1px);
     padding: 0 !important;
     padding-top: 10vh !important;
     transition: 500ms all ease-in-out;
