@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Readline = styled.section`
 		padding-inline: 5%;
-  	height: 98vh;
+  	height: 100vh;
   	display: flex;
 	  align-items: center;
   	justify-content: space-between;
@@ -118,4 +118,3 @@ export const ContainerButtons = styled.section`
 	    }
 	  }
 `;
-

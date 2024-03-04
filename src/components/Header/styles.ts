@@ -115,4 +115,63 @@ export const StyleHeader = styled.header`
 
     }
   }
+    
+    .active {
+        display: block;
+    }
 `;
+
+export const Aside = styled.aside`
+    display: none;
+    position: absolute;
+    z-index: -1;
+    background-color: #181818;
+    width: 80vw;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 0 !important;
+    padding-top: 10vh !important;
+    
+    .buttons-social {
+        padding: 0;
+        
+        > a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 1.4rem;
+        }
+    }
+    
+    footer {
+        width: inherit;
+        position: fixed;
+        bottom: 0;
+    }
+    
+    hr {
+        width: inherit;
+        margin-right: 5rem;
+    }
+    
+    ul {
+        padding: 0;
+        list-style: none;
+        
+        li {
+            margin-right: 5rem;
+            width: inherit;
+            background-color: var(--c-green);
+            margin-bottom: 1.5rem;
+            padding: 0.5rem 2rem;
+            border-radius: 1rem;
+            
+            > a {
+                color: var(--c-black);
+                font-weight: 600;
+            }
+        }
+    }
+`
