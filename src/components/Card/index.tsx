@@ -7,10 +7,9 @@ interface CardProps {
   text: string;
   img: string;
   altImg?: string;
-  author: string;
 }
 
-export function Card({ title, text, img, altImg, author }: CardProps) {
+export function Card({ title, text, img, altImg }: CardProps) {
   return (
     <CardStyle>
       <figure>
@@ -18,8 +17,6 @@ export function Card({ title, text, img, altImg, author }: CardProps) {
       </figure>
       <h3>{title}</h3>
       <p>{text.substring(0, 120)}...</p>
-
-      <p>{author}</p>
     </CardStyle>
   );
 }
