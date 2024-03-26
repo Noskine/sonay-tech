@@ -8,7 +8,7 @@ const LazyComponent = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoadingBlog(true);
-    }, 5000);
+    }, 10000);
   }, []);
 
   if (!loadingBlog) {
