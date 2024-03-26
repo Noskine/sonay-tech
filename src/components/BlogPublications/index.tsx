@@ -16,7 +16,7 @@ export function BlogPublications() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5473/api/publications")
+      .get("https://pilot-portfolio.onrender.com/api/publications")
       .then((res) => {
         setRender(res.data);
       })
