@@ -1,18 +1,30 @@
 import styled from "styled-components";
 
 export const CardStyle = styled.div`
-  width: 20%;
-  height: 32vh;
+  width: 15%;
+  position: relative;
+  height: 40vh;
   overflow: hidden;
   background-color: var(--c-black-600);
   padding: 1rem;
-  border-radius: 2.5rem;
+  border-radius: 1.6rem;
   box-shadow: 4px 3px 10px 1px #00000035;
   transition: 300ms ease-in;
 
   &:hover {
-    transform: scale(1.1);
-    transition: 300ms ease-in;
+    transform: scale(1.06);
+    transition: 200ms;
+    border: 2px solid var(--c-green);
+    cursor: pointer;
+  }
+
+  &:after {
+    content: "leia mais...";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: underline;
+    color: var(--c-green);
   }
 
   figure {
@@ -27,6 +39,14 @@ export const CardStyle = styled.div`
     background-color: var(--c-ligth-zinc);
     object-fit: cover;
     object-position: top;
-    border-radius: calc(2.5rem / 2);
+    border-radius: calc(1.6rem / 2);
+    box-shadow: var(--shadow);
+  }
+
+  h3 {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    user-select: none;
   }
 `;
