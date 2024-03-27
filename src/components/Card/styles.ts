@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardStyle = styled.div`
-  width: 15%;
+  width: 15vw;
   position: relative;
   height: 38vh;
   overflow: hidden;

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { BlogSupenseCard, Container, Laytou } from "./styles";
 import axios from "axios";
 import { Card } from "../Card";
+import { Link } from "react-router-dom";
 
 type RequestPublications = {
   ID: string;
@@ -18,7 +19,7 @@ export function BlogPublications() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5472/api/publications")
+      .get("https://pilot-portfolio.onrender.com/api/publications")
       .then((res) => {
         setRender(res.data);
       })
@@ -70,12 +71,14 @@ export function BlogPublications() {
         <div className="flex">
           {render.map((item: RequestPublications, index) => {
             return (
-              <Card
-                key={index}
-                title={item.Title}
-                text={item.Text}
-                img={item.Image}
-              />
+              <Link to={`/blog/page/${item.ID}`}>
+                <Card
+                  key={index}
+                  title={item.Title}
+                  text={item.Text}
+                  img={item.Image}
+                />
+              </Link>
             );
           })}
         </div>
