@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CardStyle = styled.div`
   width: 15%;
   position: relative;
-  height: 40vh;
+  height: 38vh;
   overflow: hidden;
   background-color: var(--c-black-600);
   padding: 1rem;

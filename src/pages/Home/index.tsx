@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 import { useLayoutEffect } from "react";
 import * as gsap from "gsap";
-import LazyComponent from "../../components/LazyComponent";
+import { BlogPublications } from "../../components/BlogPublications";
 
 export default function Home() {
   useLayoutEffect(() => {
@@ -70,7 +70,7 @@ export default function Home() {
         </Readline>
         <AboutMe />
         <Technologies />
-        <LazyComponent />
+        <BlogPublications />
         <Footer />
       </main>
     </div>
